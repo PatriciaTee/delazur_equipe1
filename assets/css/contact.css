@@ -1,0 +1,55 @@
+
+
+h2{
+    text-align: center;
+    color: #d679a6;
+    font-size: 4rem;
+}
+
+form{
+    background-color: #f5c555;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+fieldset{
+    padding: 50px;
+    margin: 40px;
+}
+
+/* fieldset numéro 1*/
+
+.infoGeneral{
+    border: 3px solid #d679a6;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#firstName{
+    flex-grow: 1;
+}
+
+#lastName{
+    flex-grow: 1;
+}
+
+#email{
+    flex-grow: 2;
+}
+
+legend, label{
+    color: white;
+}
+
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 650px;
+}
