@@ -1,5 +1,3 @@
-
-
 h2{
     text-align: center;
     color: #d679a6;
@@ -10,7 +8,6 @@ form{
     background-color: #f5c555;
     display: flex;
     justify-content: space-between;
-    text-align: center;
     flex-direction: column;
     width: 100%;
 }
@@ -20,36 +17,288 @@ fieldset{
     margin: 40px;
 }
 
-/* fieldset numéro 1*/
-
-.infoGeneral{
-    border: 3px solid #d679a6;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-#firstName{
-    flex-grow: 1;
-}
-
-#lastName{
-    flex-grow: 1;
-}
-
-#email{
-    flex-grow: 2;
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 10px;
 }
 
 legend, label{
     color: white;
 }
 
-input{
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
+legend{
+    text-align: center;
+}
+
+label{
+    text-align: left;
+}
+
+/* fieldset numéro 1*/
+
+.infoGeneral{
+    border: 3px solid #d679a6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formOneFirstLine{
+    display: flex;
+    gap: 8rem;
+    margin: 10px;
+}
+
+.formOneSecondLine{
+    display: flex;
+    gap: 8rem;
+    margin: 10px;
+}
+
+.formOneThirdLine{
+    display: flex;
+    justify-content: flex-start;
+    gap: 8rem;
+    margin: 10px;
+}
+
+.formOneLastLine{
+    display: flex;
+    margin: 10px;
+}
+
+#firstName{
+    display: flex;
+    flex-direction: column;
     width: 650px;
+}
+
+#lastName{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+#email{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+#birthday{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+#age{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+#telephone{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+
+/*fieldset numéro 2*/
+
+.adresse{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E59F80;
+    border: 3px solid #d679a6;
+}
+
+#numCivique{
+    display: flex;
+    flex-direction: column;
+}
+
+#rue{
+    display: flex;
+    flex-direction: column;
+}
+
+#pays{
+    display: flex;
+    flex-direction: column;
+}
+
+#provincedeQc{
+    display: flex;
+    flex-direction: column;
+}
+
+#postalcode{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    display: none;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+option{
+    background-color: #E59F80;
+    padding: 10px;
+}
+
+/*section formulaire*/
+
+section{
+    margin: 20px;
+    padding: 60px;
+}
+
+.formThreeLineOne{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.formThreeMidLine{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.formThreeLastLine{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+#favoriteColor{
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+}
+
+#favoriteImages{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+}
+
+#favoriteMonth{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+#favoriteWeek{
+    display: flex;
+    flex-direction: column;
+}
+
+#website{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+#note{
+    display: flex;
+    margin-right: 580px;
+    width: 90%;
+}
+
+.slider{
+    background-color: #d679a6;
+    appearance: none;
+    height: 1px;
+    border-radius: 25px;
+    outline: none;
+    margin-top: 40px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border: none;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f5c555;
+    border: 2px solid #d679a6;
+    cursor: pointer;
+}
+
+#dateShow{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+.field{
+    border: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.titre-field{
+    text-align: left;
+}
+
+/* fieldset numéro 3*/
+
+.favoriteMember{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #d679a6;
+}
+
+/*section du mot de passe*/
+
+.mdp-container{
+    padding: 50px;
+    margin: 40px;
+}
+
+#motdepasse{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/*les boutons*/ 
+
+.btn--form{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid black;
+    margin: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
 }

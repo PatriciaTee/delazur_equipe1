@@ -30,21 +30,32 @@
         <form>
             <fieldset class="infoGeneral">
                 <legend>Informations générales</legend>
-                <label for="firstName">Prénom</label>
-                <input class="firstName" type="text" id="firstName" name="firstName">
-                <label for="lastName">Nom</label>
-                <input type="text" id="lastName" name="lastName">
-                <label for="email">Adresse courriel</label>
-                <input class="emailAdress" type="email" id="email" name="email">
-                <label>Date de naissance
-                    <input type="date" id="birthday" min="1925-01-01" max="2024-01-01">
-                </label>
-                <label for="age">Et ton âge?
-                    <input type="number" id="age" min="1" max="99">
-                </label>
-                <label for="telephone">Numéro de téléphone
-                    <input type="tel" id="telephone">
-                </label>
+                    <div class="formOneFirstLine">
+                        <label for="firstName">Prénom
+                            <input class="firstName" type="text" id="firstName" name="firstName">
+                        </label>
+                        <label for="lastName">Nom
+                            <input type="text" id="lastName" name="lastName">
+                        </label>
+                    </div>
+                    <div class="formOneSecondLine">
+                        <label for="email">Adresse courriel
+                            <input class="emailAdress" type="email" id="email" name="email">
+                        </label>
+                    </div>
+                    <div class="formOneThirdLine">
+                        <label for="birthday">Date de naissance
+                            <input type="date" id="birthday" min="1925-01-01" max="2024-01-01">
+                        </label>
+                        <label for="age">Et ton âge?
+                            <input type="number" id="age" min="1" max="99">
+                        </label>
+                    </div>
+                    <div class="formOneLastLine">
+                        <label for="telephone">Numéro de téléphone
+                            <input type="tel" id="telephone">
+                        </label>
+                    </div>
             </fieldset>
             <fieldset class="adresse">
                 <legend>Adresse</legend>
@@ -55,84 +66,98 @@
                     <input type="text" id="rue">
                 </label>
                 <label for="provincedeQc">Province
-                <select name="provincedeQc" id="provincedeQc" form="province">
-                    <option value="alberta">Alberta</option>
-                    <option value="colombie-britannique">Colombie-Britannique</option>
-                    <option value="île-du-Prince-Édouard">Île-du-Prince-Édouard</option>
-                    <option value="manitoba">Manitoba</option>
-                    <option value="nouveau-brunswick">Nouveau-Brunswick</option>
-                    <option value="nouvelle-écosse">Nouvelle-Écosse</option>
-                    <option value="nunavut">Nunavut</option>
-                    <option value="ontario">Ontario</option>
-                    <option value="québec">Québec</option>
-                    <option value="saskatchewan">Saskatchewan</option>
-                </select>
-            </label>
-            <label for="pays">Pays
-                <input type="text" id="pays" value="Canada" readonly>
-            </label>
-            <label for="postalcode">Code Postal
-                <input type="text" id="postalcode">
-            </label>
+                    <select name="provincedeQc" id="provincedeQc" form="province">
+                        <option value="alberta">Alberta</option>
+                        <option value="colombie-britannique">Colombie-Britannique</option>
+                        <option value="île-du-Prince-Édouard">Île-du-Prince-Édouard</option>
+                        <option value="manitoba">Manitoba</option>
+                        <option value="nouveau-brunswick">Nouveau-Brunswick</option>
+                        <option value="nouvelle-écosse">Nouvelle-Écosse</option>
+                        <option value="nunavut">Nunavut</option>
+                        <option value="ontario">Ontario</option>
+                        <option value="québec">Québec</option>
+                        <option value="saskatchewan">Saskatchewan</option>
+                    </select>
+                </label>
+                <label for="pays">Pays
+                    <input type="text" id="pays" value="Canada" readonly>
+                </label>
+                <label for="postalcode">Code Postal
+                    <input type="text" id="postalcode">
+                </label>
             </fieldset>
             <section>
-                <label for="favoriteColor">Votre couleur préférée?
-                    <input type="color" id="favoriteColor" name="favoriteColor">
-                </label>
-                <label for="favoriteImages">Vos images préférées?
-                    <input type="file" id="favoriteImages" name="favoriteImages" accept="image/png, image/jpg, image/jpeg">
-                </label>
-                <label for="favoriteMonth">Votre mois préféré? De quelle année?
-                    <input type="month" id="favoriteMonth" name="favoriteMonth">
-                </label>
-                <label for="favWeek">Votre semaine préférée de tous les temps?
-                    <input type="week" id="favWeek" name="favWeek">
-                </label>
-                <label for="website">Un site que nous devons découvrir?
-                    <input type="url" id="website" name="website">
-                </label>
-                <label for="note">Quelle note lui donnez-vous?
-                    <input type="range" min="0" max="10">
-                </label>
-                <label for="dateShow">La date et l'heure du show que tu veux venir voir?
-                    <input type="datetime-local" id="dateShow" name="dateShow">
-                </label>
-                <label for="checkboxQuestion">Durant ce show, tu veux...
-                    <div>
-                        <label for="danser">Danser</label>
-                        <input type="checkbox" id="danser">
-                    </div>
-                    <div>
-                        <label for="groover">Groover</label>
-                        <input type="checkbox" id="groover">
-                    </div>
-                    <div>
-                        <label for="tard">Me coucher tard</label>
-                        <input type="checkbox" id="tard">
-                    </div>
-                </label>
+                <div class="formThreeLineOne">
+                    <label for="favoriteColor">Votre couleur préférée?
+                        <input type="color" id="favoriteColor" name="favoriteColor">
+                    </label>
+                    <label for="favoriteImages">Vos images préférées?
+                        <input type="file" id="favoriteImages" name="favoriteImages" accept="image/png, image/jpg, image/jpeg">
+                    </label>
+                    <label for="favoriteMonth">Votre mois préféré? De quelle année?
+                        <input type="month" id="favoriteMonth" name="favoriteMonth">
+                    </label>
+                    <label for="favoriteWeek">Votre semaine préférée de tous les temps?
+                        <input type="week" id="favoriteWeek" name="favoriteWeek">
+                    </label>
+                </div>
+                <div class="formThreeMidLine">
+                    <label for="website">Un site que nous devons découvrir?
+                        <input type="url" id="website" name="website">
+                    </label>
+                    <label for="note">Quelle note lui donnez-vous?
+                        <input type="range" id="note" min="0" max="10" class="slider">
+                    </label>
+                </div>
+                <div class="formThreeLastLine">
+                    <label for="dateShow">La date et l'heure du show que tu veux venir voir?
+                        <input type="datetime-local" id="dateShow" name="dateShow">
+                    </label>
+                    <fieldset class="field">
+                        <legend class="titre-field">Durant ce show, tu veux...</legend>
+                        <div>
+                            <label for="danser">Danser</label>
+                            <input type="checkbox" id="danser">
+                        </div>
+                        <div>
+                            <label for="groover">Groover</label>
+                            <input type="checkbox" id="groover">
+                        </div>
+                        <div>
+                            <label for="tard">Me coucher tard</label>
+                            <input type="checkbox" id="tard">
+                        </div>
+                    </fieldset>
+                </div>
             </section>
             <fieldset class="favoriteMember">
                 <legend>Votre membre du groupe préféré?</legend>
                 <div>
-                    <input type="radio" id="alain" value="Alain Jasmine">
+                    <input type="radio" id="alain" value="Alain Jasmine" name="member">
                     <label for="alain">Alain Jasmine</label>
                 </div>
                 <div>
-                    <input type="radio" id="jacques" value="Jacques Danger">
+                    <input type="radio" id="jacques" value="Jacques Danger" name="member">
                     <label for="jacques">Jacques Danger</label>
                 </div>
                 <div>
-                    <input type="radio" id="dave" value="Dave">
+                    <input type="radio" id="dave" value="Dave" name="member">
                     <label for="dave">Dave</label>
                 </div>
                 <div>
-                    <input type="radio" id="drHomme" value="Dr Homme">
+                    <input type="radio" id="drHomme" value="Dr Homme" name="member">
                     <label for="drHomme">Dr Homme</label>
                 </div>
             </fieldset>
-            <label for="motdepasse">Mot de paaaaaaaaaaasse?</label>
-            <input type="password" id="motdepasse" name="motdepasse" pattern="Kaput Draconis">
+            <div class="mdp-container">
+                <label for="motdepasse">Mot de paaaaaaaaaaasse?
+                    <input type="password" id="motdepasse" name="motdepasse" pattern="Kaput Draconis">
+                </label>
+            </div>
+            <div class="btn--form">
+                <button type="reset" value="reset">Réinitialiser</button>
+                <button type="submit" value="submit">Soumettre</button>
+            </div>
         </form>
     </main>
 </body>
