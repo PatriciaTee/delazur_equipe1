@@ -1,0 +1,157 @@
+body {
+    background-repeat: repeat-y;
+}
+
+.nb-spectacles-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 65px;
+    margin-bottom: -65px;
+}
+
+.nombre-spectacles {
+    margin-right: 10px;
+    color: #f5c555;
+}
+
+.nombre {
+    color: #f5c555;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 3px 5px 3px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Damion', serif !important;
+    text-transform: uppercase;
+    color: #d679a6;
+    font-size: 60px;
+    margin-bottom: 15px;
+    letter-spacing: 7px;
+}
+
+.spectacles {
+    background-color: rgba(245, 197, 85, 0.3);
+    margin: 60px;
+    border: 0.5px solid #d679a6;
+}
+
+.spectacle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d679a6;
+    padding-bottom: 10px;
+}
+
+.informations-spectacle {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.visiter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.informations-spectacle h3, time {
+    margin-bottom: 1px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d679a6;
+    border: 0.5px solid #f5c555;
+    text-align: center;
+    margin-bottom: 13px;
+    width: 135px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+button:hover {
+    background-color: #f5c555;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #f5c555;
+}
+
+.fa-heart-custom {
+    display: block;
+    right: 50%;
+    font-size: 1.5em;
+    color: #d679a6;
+    margin-top: 0;
+    bottom: -40px;
+}
+
+.fa-heart-custom:hover {
+    color: #f5c555;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .nombre-spectacles {
+        text-align: end;
+    }
+    .nb-spectacles-div {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    section {
+        margin: 0;
+        padding: 40px;
+    }
+    .spectacles {
+        margin: 0;
+        border: 1px solid #d679a6;
+    }
+    .spectacle {
+        align-items: center;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #d679a6;
+        font-size: 15px;
+    }
+    .informations-spectacle, .visiter {
+        margin-top: 10px;
+    }
+    .fa-heart-custom {
+        position: static;
+        margin-top: 10px;
+    }
+}
