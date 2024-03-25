@@ -1,3 +1,5 @@
+/*bases*/
+
 h2{
     text-align: center;
     color: #d679a6;
@@ -23,6 +25,7 @@ input{
     border-bottom: 2px solid black;
     outline: none;
     padding: 10px;
+    cursor: pointer;
 }
 
 legend, label{
@@ -147,6 +150,7 @@ select{
     background-color: transparent;
     border: 2px solid black;
     padding: 10px;
+    cursor: pointer;
 }
 
 option{
@@ -159,6 +163,7 @@ option{
 section{
     margin: 20px;
     padding: 60px;
+    padding-bottom: 0;
 }
 
 .formThreeLineOne{
@@ -178,6 +183,7 @@ section{
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    margin-top: 70px;
 }
 
 
@@ -193,7 +199,7 @@ section{
 #favoriteImages{
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: 360px;
 }
 
 #favoriteMonth{
@@ -253,13 +259,16 @@ section{
     width: 80%;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    margin-left: 55px;
+    margin-left: 70px;
     margin-right: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
 }
 
 .titre-field{
     text-align: left;
+    padding: 0%;
 }
 
 /* fieldset numéro 3*/
@@ -293,7 +302,8 @@ section{
 }
 
 button{
-    background-color: transparent;
+    position: relative;
+    background-color: #f5c555;
     border: 2px solid black;
     margin: 30px;
     padding-top: 10px;
@@ -301,4 +311,216 @@ button{
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
 }
+
+.button:after {
+    content: "";
+    background-color: #d679a6;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+button:hover{
+    box-shadow: 0 5px #d679a6;
+    transform: translateY(4px);
+}
+
+/*validation du formulaire*/
+
+input:invalid {
+    background-color: transparent;
+    border: none;
+    outline: 2px solid red;
+}
+
+/*mediaquery*/
+
+@media screen and (max-width: 1200px){
+
+    /* fieldset 1*/
+
+    .infoGeneral{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .formOneFirstLine{
+        display: block;
+    }
+    
+    .formOneSecondLine{
+        display: block;
+    }
+    
+    .formOneThirdLine{
+        display: block;
+    }
+    
+    .formOneLastLine{
+        display: block;
+    }  
+
+    #firstName{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #lastName{
+        width: 100%;
+    }
+    
+    #email{
+        width: 100%;
+    }
+    
+    #birthday{
+        width: 125%;
+        margin-bottom: 15px;
+    }
+    
+    #age{
+        width: 125%;
+    }
+    
+    #telephone{
+        width: 100%;
+    }
+
+    /*fieldset2*/
+    .adresse{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #numCivique{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #rue{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #pays{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #provincedeQc{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #postalcode{
+        width: 100%;
+    }
+
+    /*section*/
+    section{
+    display: block;
+    padding-top: 20px;
+    }
+    
+    .formThreeLineOne{
+        display: block;
+    }
+    
+    .formThreeMidLine{
+    display: block;
+    margin: 0;
+    }
+    
+    .formThreeLastLine{
+        display: block;
+        margin: 0;
+    }
+    
+    
+    #favoriteColor{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #favoriteImages{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #favoriteMonth{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #favoriteWeek{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #website{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #note{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #dateShow{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .field{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .titre-field{
+        width: 100%;
+    }
+
+    .favoriteMember{
+        display: block;
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .mdp-container{
+        padding:  0 0 0 50px;
+        margin: 30px;
+    }
+    
+    .btn--form{
+        margin: 10px;
+    }
+
+    button{
+        margin:20px;
+    }
+}
+
+
+
+

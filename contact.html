@@ -30,32 +30,32 @@
         <form>
             <fieldset class="infoGeneral">
                 <legend>Informations générales</legend>
-                    <div class="formOneFirstLine">
-                        <label for="firstName">Prénom
-                            <input class="firstName" type="text" id="firstName" name="firstName">
-                        </label>
-                        <label for="lastName">Nom
-                            <input type="text" id="lastName" name="lastName">
-                        </label>
-                    </div>
-                    <div class="formOneSecondLine">
-                        <label for="email">Adresse courriel
-                            <input class="emailAdress" type="email" id="email" name="email">
-                        </label>
-                    </div>
-                    <div class="formOneThirdLine">
-                        <label for="birthday">Date de naissance
-                            <input type="date" id="birthday" min="1925-01-01" max="2024-01-01">
-                        </label>
-                        <label for="age">Et ton âge?
-                            <input type="number" id="age" min="1" max="99">
-                        </label>
-                    </div>
-                    <div class="formOneLastLine">
-                        <label for="telephone">Numéro de téléphone
-                            <input type="tel" id="telephone">
-                        </label>
-                    </div>
+                <div class="formOneFirstLine">
+                    <label for="firstName">Prénom
+                        <input class="firstName" type="text" id="firstName" name="firstName" pattern="[A-Za-z]{2,}">
+                    </label>
+                    <label for="lastName">Nom
+                        <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]{2,}" >
+                    </label>
+                </div>
+                <div class="formOneSecondLine">
+                    <label for="email">Adresse courriel
+                        <input class="emailAdress" type="email" id="email" name="email">
+                    </label>
+                </div>
+                <div class="formOneThirdLine">
+                    <label for="birthday">Date de naissance
+                        <input type="date" id="birthday" min="1925-01-01" max="2024-01-01">
+                    </label>
+                    <label for="age">Et ton âge?
+                        <input type="number" id="age" min="1" max="99">
+                    </label>
+                </div>
+                <div class="formOneLastLine">
+                    <label for="telephone">Numéro de téléphone
+                        <input type="tel" id="telephone">
+                    </label>
+                </div>
             </fieldset>
             <fieldset class="adresse">
                 <legend>Adresse</legend>
@@ -66,24 +66,24 @@
                     <input type="text" id="rue">
                 </label>
                 <label for="provincedeQc">Province
-                    <select name="provincedeQc" id="provincedeQc" form="province">
-                        <option value="alberta">Alberta</option>
-                        <option value="colombie-britannique">Colombie-Britannique</option>
-                        <option value="île-du-Prince-Édouard">Île-du-Prince-Édouard</option>
-                        <option value="manitoba">Manitoba</option>
-                        <option value="nouveau-brunswick">Nouveau-Brunswick</option>
-                        <option value="nouvelle-écosse">Nouvelle-Écosse</option>
-                        <option value="nunavut">Nunavut</option>
-                        <option value="ontario">Ontario</option>
-                        <option value="québec">Québec</option>
-                        <option value="saskatchewan">Saskatchewan</option>
-                    </select>
+                <select name="provincedeQc" id="provincedeQc" form="province">
+                    <option value="alberta">Alberta</option>
+                    <option value="colombie-britannique">Colombie-Britannique</option>
+                    <option value="île-du-Prince-Édouard">Île-du-Prince-Édouard</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="nouveau-brunswick">Nouveau-Brunswick</option>
+                    <option value="nouvelle-écosse">Nouvelle-Écosse</option>
+                    <option value="nunavut">Nunavut</option>
+                    <option value="ontario">Ontario</option>
+                    <option value="québec">Québec</option>
+                    <option value="saskatchewan">Saskatchewan</option>
+                </select>
                 </label>
                 <label for="pays">Pays
                     <input type="text" id="pays" value="Canada" readonly>
                 </label>
                 <label for="postalcode">Code Postal
-                    <input type="text" id="postalcode">
+                    <input type="text" id="postalcode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
                 </label>
             </fieldset>
             <section>
@@ -155,10 +155,38 @@
                 </label>
             </div>
             <div class="btn--form">
-                <button type="reset" value="reset">Réinitialiser</button>
+                <button class="button" type="reset" value="reset">Réinitialiser</button>
                 <button type="submit" value="submit">Soumettre</button>
             </div>
         </form>
     </main>
+    <footer>
+        <div>
+            <img src="./assets/img/delazur_logo.png" alt="Logo Delazur">
+        </div>
+        <div>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./spectacles.html">Spectacles</a></li>
+                <li><a href="./boutique.html">Boutique</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music" target="_blank"><i class="fab fa-apple"></i></a></li>
+                <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music" target="_blank"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://delazur.bandcamp.com/album/azur-mimosa" aria-label="Bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Production en médias interactifs</p>
+            <p>GR.08 - Mars 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
