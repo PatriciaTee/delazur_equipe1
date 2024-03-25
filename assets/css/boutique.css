@@ -11,82 +11,82 @@ h2 {
 
 h3 {
     margin-left: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #d679a6;
     text-transform: uppercase;
 }
 
-.boutique__conteneur {
+.boutique__container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.boutique__conteneur--albums,
-.boutique__conteneur--tshirt {
-    width: 380px;
+.boutique__container--albums,
+.boutique__container--tshirt {
+    width: 260px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    margin: 20px 15px 15px 30px;
+    padding: 15px;
+    margin: 10px 15px 15px 20px;
 }
 
-.boutique__conteneur--albums {
-    width: 300px;
+.boutique__container--albums {
+    width: 210px;
 }
 
-.boutique__conteneur--tshirt--img {
-    width: 70%;
-    height: auto;
+.boutique__container--tshirt--img {
+    width: 80%;
     margin: 0 auto;
 }
 
-.boutique__conteneur--albums--img {
+.boutique__container--albums--img {
     width: 100%;
-    height: auto;
 }
 
-.boutique__conteneur--title {
+.boutique__container--title {
     text-transform: uppercase;
     color: #f5c555;
     font-weight: 650;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
-.boutique__conteneur ul {
+.boutique__container ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.boutique__conteneur li {
+.boutique__container li {
     font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
     padding: 5px;
-
 }
 
-.boutique__conteneur--bouton {
+.boutique__container--button {
     background-color: #f5c555;
     text-align: center;
-    padding: 8px 5px;
-    font-size: 1.2rem;
+    padding: 7px;
+    font-size: 0.9rem;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     display: inline-block;
     margin-top: 10px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.boutique__conteneur--bouton:hover {
+.boutique__container--button:hover,
+.boutique__container--button:hover:focus {
     background-color: #dddddd;
 }
 
-.boutique__conteneur--add {
+.boutique__container--add {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -120,7 +120,7 @@ p {
     display: flex;
 }
 
-.modal__conteneur {
+.modal__container {
     display: none;
     width: 50%;
     min-height: 150px;
@@ -144,14 +144,14 @@ p {
     border: 0;
     cursor: pointer;
     padding-right: 15px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .modal__main {
     padding: 20px;
 }
 
-.modal__main > span {
+.modal__main>span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +161,7 @@ p {
     font-size: 1.5rem;
 }
 
-h4 {
+h5 {
     font-size: 2.5rem;
     color: #d679a6;
     text-transform: uppercase;
