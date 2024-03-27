@@ -68,7 +68,7 @@ table {
     font-size: 13px;
 }
 
-h2 {
+h3 {
     margin: 5px;
     position: relative; 
     z-index: 2; 
@@ -248,7 +248,7 @@ aside p {
 }
 
 
-h1 {
+h2 {
     font-family: 'Damion', serif;
     font-size: 35px;
     color:  #d679a6;
