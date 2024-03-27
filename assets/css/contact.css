@@ -160,7 +160,7 @@ option{
 
 /*section formulaire*/
 
-section{
+.form--three{
     margin: 20px;
     padding: 60px;
     padding-bottom: 0;
@@ -435,7 +435,7 @@ input:invalid {
     }
 
     /*section*/
-    section{
+    .form-three{
     display: block;
     padding-top: 20px;
     }
