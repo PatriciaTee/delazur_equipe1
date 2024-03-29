@@ -28,7 +28,7 @@ section {
     padding: 15px 3px 5px 3px;
 }
 
-h2 {
+.spectacles-titre {
     text-align: center;
     font-family: 'Damion', serif !important;
     text-transform: uppercase;
@@ -72,11 +72,11 @@ a {
     color: black;
 }
 
-.informations-spectacle h3, time {
+.salle-de-spectacle, time {
     margin-bottom: 1px;
 }
 
-button {
+.btnVisiter {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -90,12 +90,12 @@ button {
     font-size: 11px;
 }
 
-button:hover {
+.btnVisiter:hover {
     background-color: #f5c555;
     cursor: pointer;
 }
 
-button:focus {
+.btnVisiter:focus {
     outline: none;
     box-shadow: 0 0 10px #f5c555;
 }
@@ -121,7 +121,7 @@ button:focus {
         align-items: center;
         background-repeat: no-repeat;
     }
-    h2 {
+    .spectacles-titre {
         font-size: 40px;
     }
     .nombre-spectacles {
