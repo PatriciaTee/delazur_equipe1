@@ -1,18 +1,18 @@
 
 .alainJasmine {
-    background-image: url(/delazur_equipe1/assets/img/fred.jpeg);
+    background-image: url(./assets/img/fred.jpeg)
 }
 
 .jacquesDanger {
-    background-image: url(/delazur_equipe1/assets/img/jee.jpeg);
+    background-image: url(/assets/img/jee.jpeg);
 }
 
 .dove {
-    background-image: url(/delazur_equipe1/assets/img/dove.jpeg);
+    background-image: url(/assets/img/dove.jpeg);
 }
 
 .drHomme {
-    background-image: url(/delazur_equipe1/assets/img/chelou.jpeg);
+    background-image: url(./assets/img/chelou.jpeg);
 }
 
 .alainJasmine,
@@ -39,7 +39,7 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     min-height: 500px;
 }
 
@@ -68,7 +68,7 @@ table {
     font-size: 16px;
 }
 
-h3 {
+.nom {
     margin: 5px;
     position: relative; 
     z-index: 2; 
@@ -78,13 +78,13 @@ h3 {
 }
 
 .cartesContainer td {
-    padding: 7px; 
+    padding: 10px; 
     width: 60%;
     border-bottom: 1px solid white;
 }
 
 .cartesContainer th {
-    padding: 7px;
+    padding: 10px;
     text-align: left;
     white-space: pre-line; 
     width: 32%;
@@ -235,6 +235,10 @@ aside p {
         text-align: left;
         width: 30%;
     }
+
+    .aside-p1 {
+        padding-bottom: 20px;
+    }
 }
 
 .img-stack img {
@@ -245,7 +249,7 @@ aside p {
 }
 
 
-h2 {
+.title {
     font-family: 'Damion', serif;
     font-size: 35px;
     color:  #d679a6;
