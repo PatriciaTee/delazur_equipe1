@@ -23,7 +23,7 @@ body {
     margin-right: 10px;
 }
 
-section {
+.section-spectacles {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 15px 3px 5px 3px;
 }
@@ -131,7 +131,7 @@ a {
         margin-right: 0;
         margin-bottom: 0;
     }
-    section {
+    .section-spectacles {
         margin: 0;
         padding: 40px;
     }
