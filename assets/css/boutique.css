@@ -24,7 +24,7 @@
 
 .boutique__container--albums,
 .boutique__container--tshirt {
-    width: 260px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 
 .boutique__container--albums {
-    width: 210px;
+    width: 260px;
 }
 
 .boutique__container--tshirt--img {
