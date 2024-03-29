@@ -4,11 +4,11 @@
 }
 
 .jacquesDanger {
-    background-image: url(/assets/img/jee.jpeg);
+    background-image: url(./assets/img/jee.jpeg);
 }
 
 .dove {
-    background-image: url(/assets/img/dove.jpeg);
+    background-image: url(./assets/img/dove.jpeg);
 }
 
 .drHomme {
@@ -39,7 +39,7 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     min-height: 500px;
 }
 
@@ -255,6 +255,8 @@ aside p {
     color:  #d679a6;
     margin-left: 40px;
     padding: 5px;
+    text-align: left;
+    font-weight: bold;
 }
 
 .aside-p1 {
@@ -279,7 +281,7 @@ aside p {
 
 .spotify {
     color: black;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
     top: 65%;
     right: 23%;
@@ -287,7 +289,7 @@ aside p {
 
 .arrow {
     color: black;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
     top: 65%;
     right: 35%;
@@ -295,15 +297,15 @@ aside p {
 
 @media screen and (min-width: 800px) {
     .spotify {
-        top: 60%;
-        right: 3%;
-        font-size: 50px;
+        top: 63%;
+        right: 2%;
+        font-size: 45px;
     }
     
     .arrow {
-        top: 60%;
-        right: 9%;
-        font-size: 50px;
+        top: 63%;
+        right: 8%;
+        font-size: 45px;
     }
 
     aside {
